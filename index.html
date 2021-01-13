@@ -1,66 +1,85 @@
 <!DOCTYPE html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Visualization of Sorting Algorithms</title>
-        <script src="scripts/scripts.js"></script>
-    </head>
-    <body onload = "createRectangles()">
-        
-        <div class="navigation flex">
-            <!-- <div class="dropdown">
-                <button class="dropbtn navigation">ALGORITHMS</button>
-                <div class="dropdown-content">
-                  <a href="#">Merge Sort</a>
-                  <a href="#">Selection Sort</a>
-                  <a href="#">Insertion Sort</a>
-                </div>
-            </div> -->
-
-            <a href="index.html" class = "dropbtn">Visualization Tool</a>
-            <a href="Algorithms/index.html" class = "dropbtn">Algorithm Explanations</a>
-            <!-- <a href="VisYourAlgor/index.html" class = "dropbtn">Code Yourself</a> -->
-        </div>
-        <p>
-            Sorting Visualization
-        </p>
-        <div class="visualization-box">
-
-            <div class="container">
-                <div id="Box-Container">
-              
-                </div>
-
-            </div>
-
-
-            
-        </div>
-
-        <a class = "textSpeed">Change your Sorting Speed </a>
-        
-        <div class="slidecontainer">
-           
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+<html>
+    
+<head><link rel="stylesheet" href="/Users/benyang/Documents/GitHub/BenYangSB.github.io/style.css">
+    <script src="/Users/benyang/Documents/GitHub/BenYangSB.github.io/script.js"></script>
+    
+</head>
+<body onload="typeWriter()">
+    
+        <div class="parent">
+            <img id="img" src="images/uc-santa-barbara-name-bloc.jpg" alt="ucsb">
+            <a href="https://docs.google.com/document/d/1yH0795A9wIhQPnnX-fyO_gnExq-oFmiMovF4G3bMNEA/edit?usp=sharing" class="resume">RESUME</a>
           </div>
-
-        <div class="btns flex">
-            
-                <!-- <button class = "button" type="button" onclick="sort()">Click To Start Sort!</button> -->
-                <button class = "btn" type="button" onclick="selectionSortSlowed()">Selection Sort!</button>
-                <button class = "btn" type="button" onclick="insertionSortSlowed()">Insertion Sort!</button>
-                <button class = "btn" type="button" onclick="bubbleSortSlowed()">Bubble Sort!</button>
-                <button class = "btn" type="button" onclick="runQuickSort()">Quick Sort!</button>
-                <button class = "btn" type="button" onclick="runMergeSort()">Merge Sort!</button>
-              
-                <!-- <input type="submit" value="Submit" onclick="createRectangles()" > -->
+        
+    
+        <div>
+            <p>BENJAMIN YANG</p>
+            <p class="contact"> Contact Me: benjaminyang@ucsb.edu      ||      My Github: https://github.com/BenYangSB             ||          LinkedIn: www.linkedin.com/in/benjamin-yang-68101
+            </p>
             
         </div>
-
-        <div class="num">
-            <label for="amountOfRectangles"> Enter Amount of Rectangles to Sort:</label>
-            <input type="number" value="100" id="amountOfRectangles" name="amountOfRectangles" onchange="createRectangles()"> <br>
+    
+        <p class="about1"> ABOUT ME : </p>
+        <div class="ab">
+            <p id="demo">  I'm a current student at UCSB pursuring a degree in Computer Science, interested in Web-design, Algorithms, and occasially, competitive programming. Feel free to contact me if you have questions about my resume.</p>
+            
         </div>
-       
-         
+    
+    
+        <p class="proj">
+            <a href="/Users/benyang/Documents/GitHub/BenYangSB.github.io/VisualizationPage/index.html">Check out my sorting project: </a>
+        </p>
+
+    
+    
+    
+    
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
+    
+    
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="images/sorting.png" style="width: 97%; display: block;">
+      <img class="mySlides" src="images/sorting.png" style="width: 97%; display: none;">
+      <img class="mySlides" src="images/sorting.png" style="width: 97%; display: none;">
+      <img class="mySlides" src="images/sorting.png" style="width: 97%; display: none;">
+    
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+    
+    
+    
+    
+    
     </body>
+    
 </html>
