@@ -118,9 +118,10 @@ head{
 }
 
 img{
+  padding-top: 10px;
   margin-left: 100px;
-  width: 5%;
-  height: 5%;
+  width: 7%;
+  height: 7%;
   margin-bottom: 0px;
   margin-left: 2%;
 }
