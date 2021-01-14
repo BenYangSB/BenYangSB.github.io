@@ -157,11 +157,6 @@ p{
   width: 60%;
 }
 
-
-* {
-  box-sizing: border-box;
-}
-
-
-
+.last{
+  margin-bottom: 200px;
 }
