@@ -22,10 +22,63 @@ head{
   margin-left: 80%;
 }
 
+.git{
+  margin-left: 40px;
+  margin-right: 40px;
+  border: rgb(0, 255, 55);
+  border-radius: 3px;
+  border-style: solid;
+}
+#head2{
+  color: rgb(17, 0, 255);
+  font-size: 20px;
+  margin-left: 25%;
+}
+
+#head3{
+  color: rgb(30, 255, 0);
+  font-size: 20px;
+  margin-left: 25%;
+}
+.Linked{
+  border: rgb(0, 4, 255);
+  border-radius: 3px;
+  border-style: solid;
+}
 .float-left-child {
   float: left;
 }
 
+.college{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+
+}
+#col{
+  width: 40%;
+  margin-left: 15px;
+  text-align: left;
+  color: aliceblue;
+  font-size: 15px;
+}
+
+.sorter{
+  margin-left: 40px;
+  border: rgb(251, 255, 0);
+  border-radius: 3px;
+  border-style: solid;
+}
+#school{
+  width: 30%;
+  height: 20%;
+}
+#line{
+  width: 100%;
+  color: blue;
+  height: 10px;
+}
 
 .proj{
   color: #fffb00;
@@ -54,7 +107,7 @@ p{
 .contact{
   text-align: center;
   font-size: 15px;
-  text-shadow: 7px 7px 7px #fffb00;
+  /* text-shadow: 7px 7px 7px #fffb00; */
 
 }
 
