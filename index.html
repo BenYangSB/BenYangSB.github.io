@@ -35,9 +35,9 @@
 
 
         <p class="about1"> ABOUT ME : </p>
-        <h id="head2">Current Education</h>
 
         <div class = "college">
+          <h id="head2">Current Education</h>
 
           <img id="school" src="images/school.jpg" alt="ucsb">
           <p id="col">&emsp;  As of now, I am pursuring a degree in computer Science at the University of Caifornia, Santa Barbara. The classes that I have taken include: Problem Solving with Computers, Linear Algebra, Physics, Statistics, and Differential equations. 
@@ -47,13 +47,49 @@
 
         </div>
 
-        <h id="head3">High school</h>
+
+
 
         <div class = "college">
+          <h id="head3">Primary Education</h>
 
           <img id="school" src="images/high.jpg" alt="ucsb">
           <p id="col">&emsp; My time at Homestead high school built a foundation for my interest in computer science. I took classes such as APCS and Java, which gave me a brief introduction to the world of coding and engineering. I challenged myself both physically and mentally, participating in the school soccer team, and taking courses that I knew would help me become a better and more disciplined student. I recently graduated in 2020 into the pandemic.
           </p>
+
+        </div>
+
+
+
+       
+
+        <div class = "skills">
+
+
+
+          <ul>
+            <h id="sk">
+              TECHNICAL SKILLS 
+            </h>
+
+            <br/><br/>
+
+            <li>Data Structures & Algorithms 
+              <ul>
+                <li>Trees, Graphs, LinkedLists</li>
+                <li>Arrays, Maps, ArrayList, Stacks, Heaps, Queues</li>
+                <li>DFS, BFS, Greedy, DP...ect             <br/><br/>
+                </li>
+              </ul>
+            </li>
+            <li>Languages/FrameWorks/Other
+              <ul>
+                <li>Java (Experienced), C++ (Proficient), JavaScript (Proficient) </li>
+                <li>NodeJS, FireBase, HTML, CSS</li>
+                <li>VScode, Eclipse, Notepad++, Clion, vim</li>
+              </ul>
+            </li>
+          </ul>
 
         </div>
 
@@ -79,32 +115,16 @@
     
     <div class="w3-content w3-display-container">
       <img class="mySlides" src="images/sorting.png" style="width: 97%; display: block;">
-      <img class="mySlides" src="images/sorting.png" style="width: 97%; display: none;">
-      <img class="mySlides" src="images/sorting.png" style="width: 97%; display: none;">
-      <img class="mySlides" src="images/sorting.png" style="width: 97%; display: none;">
+      <img class="mySlides" src="images/Screen Shot 2021-01-13 at 9.49.47 PM.png" style="width: 97%; display: none;">
+      <img class="mySlides" src="images/Screen Shot 2021-01-13 at 9.50.04 PM.png" style="width: 97%; display: none;">
+      <!-- <img class="mySlides" src="images/sorting.png" style="width: 97%; display: none;"> -->
     
       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
     </div>
     
     <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      x[slideIndex-1].style.display = "block";  
-    }
+
     </script>
     
     
